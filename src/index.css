@@ -26,6 +26,17 @@
 .alternate:nth-child(even){
     border-color: #fff;
 }
+.marqueer{
+    animation: movey infinite 6s alternate-reverse linear;
+}
+@keyframes movey {
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(-120px,0)
+    }
+}
 
 .green__gradient{
     background: radial-gradient(50% 50% at 50% 50%, rgba(0, 134, 112, 0.232) 0%, rgba(0, 134, 112, 0.152) 66.18%, rgba(0, 71, 255, 0.016) 86.67%);
