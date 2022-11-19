@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 16px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* .transition_smooth{
+    transition: translate 100ms ease-in-out;
+} */
+
+.alternate:nth-child(even){
+    border-color: #fff;
+}
+
+.green__gradient{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 134, 112, 0.232) 0%, rgba(0, 134, 112, 0.152) 66.18%, rgba(0, 71, 255, 0.016) 86.67%);
+}
+.green__gradient_2{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 134, 112, 0.195) 0%, rgba(0, 134, 112, 0.165) 51.59%, rgba(0, 71, 255, 0.015) 86.67%);
+}
+.green_blue_gradient{
+    background: linear-gradient(180deg, #58C0A7 0%, #21BADE 100%);    
+}
+.green_blue_gradient_y{
+    background: linear-gradient(90deg, #57BFA6 17.96%, #20A2C6 92.41%);
+}
+
+.layout-y{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.layout-x{
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+.section_title{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    color: #222e55;
+}
+.section_descr{
+    font-size: 1rem;
+    color: #4B5868;
+}
+.hover_scale{
+    transition: transform 150ms ease-in-out;
+    transform: scale(1.00);
+}
+.hover_scale:hover{
+    transform: scale(1.08);
+}
+@keyframes smoothScale {
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(1.08);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .layout-x{
+        padding-left: 22px;
+        padding-right: 22px;
+    }    
+    .layout-y{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }    
+    .section_title{
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: -0.025em;
+        color: #222e55;
+    }
+    .section_descr{
+        font-size: 1rem;
+        color: #4B5868;
+    }    
+}

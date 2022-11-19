@@ -1,0 +1,18 @@
+:root { 
+  --bg: #242629; 
+  --grey-ligth: #cfd6e3; 
+  --blue: #8ff2ff; 
+  --grey-dark: #303c51; 
+  --white: #ffffff; 
+  --neutral: #62728f; 
+  --h1: 700 3.125rem/normal Inter; 
+  --h2: 600 1.75rem/2.5rem Inter; 
+  --body1-regular: 400 1.125rem/1.75rem Inter; 
+  --body1-bold: 700 1.125rem/normal Inter;      
+}
+
+body {
+  font: var(--body1-regular);
+  color: var(--white);
+  background-color: var(--grey-dark);
+}
