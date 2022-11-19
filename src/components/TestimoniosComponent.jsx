@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import TestimonialsJSON from '../static/testimonials.json'
 
 const Testimonio = ({data: {autor, cargo, avatar, contenido}}) => {
-  const publicUrl = import.meta.env.VITE_PUBLIC_URL
+  const publicUrl = import.meta.env.VITE_PUBLIC_URL?import.meta.env.VITE_PUBLIC_URL:""
   console.log({publicUrl})
   return (
     <figure className='bg-greyDark w-[26.25em] h-[18em] py-[1.25em] px-[1.375em] rounded-[8px] relative shrink-0'>
