@@ -2,37 +2,37 @@
 {
     "autor": "Gustavo Delgado",
     "cargo": "VP of Engineering",
-    "avatar": "avatar1",
+    "avatar": "assets/images/avatar1.png",
     "contenido": "Team was very helpful and friendly. Post purchase support is 100% friendly and professional. We never had to wait for a reply to our emails or ask again. Every answer was precise and top class."
 },
 {
     "autor": "Cristopher",
     "cargo": "UI/UX",
-    "avatar": "avatar2",
+    "avatar": "assets/images/avatar2.png",
     "contenido": "This testimonial is highly effective because of the product carousel at the bottom. After reading a success story, the users feel like they can become like the ambassador once they purchase the gear he used."
 },
 {
     "autor": "Diego Idelfonso",
     "cargo": "Product Manager",
-    "avatar": "avatar3",
+    "avatar": "assets/images/avatar3.png",
     "contenido": "I have built websites using many different themes, and builders, but am loving WPZOOM and the amazing support they provide. With various templates that either use a simple widget."
 },
 {
     "autor": "Zendaya Colorado",
     "cargo": "Scrum Master",
-    "avatar": "avatar4",
+    "avatar": "assets/images/avatar4.png",
     "contenido": "This is one of the most cost-effective methods for collecting unbiased customer testimonials. You can create a hashtag and easily start promoting it on your Instagram."
 },
 {
     "autor": "Diana Meza",
     "cargo": "Web designer",
-    "avatar": "avatar5",
+    "avatar": "assets/images/avatar5.png",
     "contenido": "Its high rating gives Harry’s a major vote of confidence. You'll rarely find a negative review, though it’s worth noting that these negative reviews also lend credibility. If all the ratings are five-star ratings."
 },
 {
     "autor": "Sofia Carrasco",
     "cargo": "Software developer",
-    "avatar": "avatar6",
+    "avatar": "assets/images/avatar6.png",
     "contenido": "Foodica has transformed the way I blog for the better. Paying for a WordPress theme is completely worth it especially if youre not a true techie. It streamlines the process of building a site and saves so much time. Plus, it looks great."
 }
 ]

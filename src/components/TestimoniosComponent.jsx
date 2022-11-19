@@ -1,12 +1,14 @@
-import React, {useState, useEffect} from 'react'
-import Avatar1 from '../assets/images/avatar1.png'
+import React, {useState} from 'react'
+// import Avatar1 from '../assets/images/avatar1.png'
 import TestimonialsJSON from '../static/testimonials.json'
 
 const Testimonio = ({data: {autor, cargo, avatar, contenido}}) => {
+  const publicUrl = import.meta.env.VITE_PUBLIC_URL
+  console.log({publicUrl})
   return (
     <figure className='bg-greyDark w-[26.25em] h-[18em] py-[1.25em] px-[1.375em] rounded-[8px] relative shrink-0'>
       <div className='overflow-hidden'>
-        <img className='rounded-[50%]' src={`/src/assets/images/${avatar}.png`} width="48px" height="48px" alt="avatar testimonio" />
+        <img className='rounded-[50%]' src={`${publicUrl}/${avatar}`} width="48px" height="48px" alt={`avatar de ${autor}`} />
       </div>
       <figcaption className='text-[#FFFFFE] flex flex-col font-semibold mt-3'>
         {autor}  
