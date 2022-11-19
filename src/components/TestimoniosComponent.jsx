@@ -29,11 +29,35 @@ const SeparatorComponent = () => (
 
 const TestimonioVista = ({data, offset}) => {
   return (
-    <div className={`shrink-0 flex flex-row justify-between w-[1088px] cc`} style={{transform: `translate(-${offset}px,0px)`}}>
+    <div className={`transition_smooth shrink-0 flex flex-row justify-between w-[1088px] cc`} style={{transform: `translate(-${offset}px,0px)`}}>
       <Testimonio data={data[0]} />
       <SeparatorComponent />
       <Testimonio data={data[1]} />
     </div>
+  )
+}
+
+const IndexSelectorComponent = ({len, indexActive, pageIndexHandler}) => {
+  const percentWidth = 100/len
+  return (
+    <div className='flex flex-row gap-2 mx-[150px] items-center'>
+      {
+        Array(len).fill(0).map((n, indx) => {
+          if (indx === indexActive){
+            return (
+                <div key={indx} style={{width: `${percentWidth}%`}} className={`h-[12px] bg-blue`} />
+            )
+          }else{
+            return (
+              <div  key={indx} style={{width: `${percentWidth}%`}} className='h-[20px] flex items-center cursor-pointer' onClick={()=>pageIndexHandler(indx)}>
+                <div className={`w-full h-[4px] bg-greyDark`} />
+              </div>
+            )
+          }
+        })
+      }
+    </div>
+
   )
 }
 
@@ -79,10 +103,8 @@ const TestimoniosComponent = () => {
           }
         </div>
       </div>
-      <div className='button-wrapper'>
-          <button onClick={()=>previousHandler()} className='bg-blue text-bg font-medium px-6 py-2'>Previous</button>
-          <br />
-          <button onClick={()=>nextHandler()} className='bg-blue mt-4 text-bg font-medium px-6 py-2'>Next</button>
+      <div className='mt-12'>
+        <IndexSelectorComponent len={halfLenData} indexActive={indexPage} pageIndexHandler={setIndexPage} />
       </div>
     </div>
   )

@@ -13,10 +13,16 @@
   -webkit-text-size-adjust: 100%;
 }
 
-/* .transition_smooth{
-    transition: translate 100ms ease-in-out;
-} */
-
+.transition_smooth{
+    transition: transform 260ms ease-out;
+}
+.clickable_line{
+    transition: width 100ms ease-in-out;
+}
+.clickable_line:hover{
+    width: 4px;
+    color: #6ac1cc;
+}
 .alternate:nth-child(even){
     border-color: #fff;
 }
