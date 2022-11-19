@@ -14,8 +14,8 @@ import YouTube from '../assets/icons/youtube.png'
 const BrandsBanner = () => {
   return (
     <footer className='mx-[150px]'>
-        <p className='text-[#cbcbcb] text-base font-medium mt-2'>Ellos confian en nosotros:</p>
-        <div className='mt-3 flex flex-row gap-[5rem] w-[1080px] overflow-x-hidden px-4'>
+        <p className='xl:mt-[1.8em] text-[#cbcbcb] text-[1em] font-medium mt-[0.5em]'>Ellos confian en nosotros:</p>
+        <div className='mt-5 xl:mt-[1.25em] flex flex-row gap-[5rem] w-[67.5em] overflow-x-hidden px-4'>
         <img className='marqueer' src={Facebook} width="32px" height="32px" alt="social media icon" />
         <img className='marqueer' src={Atlassian} width="32px" height="32px" alt="social media icon" />
         <img className='marqueer' src={Gmail} width="32px" height="32px" alt="social media icon" />
