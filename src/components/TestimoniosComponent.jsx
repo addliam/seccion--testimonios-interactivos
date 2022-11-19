@@ -27,9 +27,9 @@ const SeparatorComponent = () => (
 <div className='self-center w-[3px] h-[290px] bg-greyDark' />
 )
 
-const TestimonioVista = ({style, data}) => {
+const TestimonioVista = ({data, offset}) => {
   return (
-    <div className={`shrink-0 flex flex-row justify-between w-[1088px] ${style}`}>
+    <div className={`shrink-0 flex flex-row justify-between w-[1088px] cc`} style={{transform: `translate(-${offset}px,0px)`}}>
       <Testimonio data={data[0]} />
       <SeparatorComponent />
       <Testimonio data={data[1]} />
@@ -52,7 +52,9 @@ const TestimoniosComponent = () => {
   }
   const nextHandler = () => {
     setIndexPage((prev)=>{
-      if (prev === halfLenData){
+      console.log({halfLenData});
+      console.log({prev});
+      if (prev === halfLenData-1){
         return prev
       }else{
         return (prev+1)
@@ -68,9 +70,10 @@ const TestimoniosComponent = () => {
               // agrupar de 2 en 2: 0,2 - 2,4 - 4,6
               let start = indx*2
               let end = indx*2+2
-              let styleName = `translate-x-[-${indexPage*1088}px]`
+              // let styleName = `translate-x-[-${indexPage*1088}px]`
+              let offset = indexPage*1088
               return (
-              <TestimonioVista key={indx} data={TestimonialsJSON.slice(start, end)} style={styleName} />
+              <TestimonioVista key={indx} data={TestimonialsJSON.slice(start, end)} offset={offset} />
               )
             })
           }
